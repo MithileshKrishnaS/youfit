@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/youfit/static/css/main.bb0345ff.css",
+    "main.js": "/youfit/static/js/main.3e41416f.js",
+    "static/js/787.06e0866d.chunk.js": "/youfit/static/js/787.06e0866d.chunk.js",
+    "static/media/front1.webp": "/youfit/static/media/front1.2db418eb2ddfa889913f.webp",
+    "static/media/treadmill.png": "/youfit/static/media/treadmill.2fe3ca9fe8a171bc3aa8.png",
+    "static/media/right.png": "/youfit/static/media/right.d72ea5a204dba1eed3be.png",
+    "static/media/workout.svg": "/youfit/static/media/workout.8f259e8f1b33052ab9c8cd48eb0457f3.svg",
+    "static/media/logo1.jpg": "/youfit/static/media/logo1.963481a3692823afc881.jpg",
+    "index.html": "/youfit/index.html",
+    "main.bb0345ff.css.map": "/youfit/static/css/main.bb0345ff.css.map",
+    "main.3e41416f.js.map": "/youfit/static/js/main.3e41416f.js.map",
+    "787.06e0866d.chunk.js.map": "/youfit/static/js/787.06e0866d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb0345ff.css",
+    "static/js/main.3e41416f.js"
+  ]
+}
