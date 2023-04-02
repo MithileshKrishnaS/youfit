@@ -4,15 +4,17 @@
 }
 
 .nav{
-    height: 10vh;
     background-color: black;
-    color: white;
-    padding: 1%;
-    display: grid;
-    grid-template-columns: 1fr 17fr;
-    width: 98.5vw;
+    width: 100%;
     position: fixed;
     z-index: 1;
+}
+
+.nav-left {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
 
 .nav>img{
@@ -30,11 +32,7 @@
     font-size: 200%;
 }
 
-i{
-    margin-top: 5%;
-}
-
-span,i{
+.grad {
     background: #121FCF;
     background: -webkit-linear-gradient(right, #121FCF 0%, #CF1512 100%);
     background: -moz-linear-gradient(right, #121FCF 0%, #CF1512 100%);
@@ -42,50 +40,68 @@ span,i{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
-    font-size: 4em;
+    font-size: 56px;
 }
 
 .nav>span{
-    width: 10vw;
+    max-width: 200px;
+}
+
+.img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
 }
 
 .header{
-    background-image: url("../public/images/front1.webp");
+    /* background-image: url("../public/images/front1.webp");
     background-repeat: no-repeat;
     background-size: cover;
     width: 99.2vw;
-    height: 80vh;
+    height: 80vh; */
     color: white;
 }
 
 .text{
     position: absolute;
-    top: 70%;
-    left: 10%;
     width: 30vw;
     z-index: 0;
+    margin-top: -200px;
+    margin-left: 10vw;
 }
 
 .total{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
     text-align: center;
+    padding: 20px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: auto;
 }
 
 .each{
-    padding: 8% 8% 4% 8%;
-    margin: 5%;
     border: 2px solid black;
     border-radius: 1em;
     cursor: pointer;
     color: black;
     font-size: 2em;
+    width: calc(100% - 40px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    max-width: 400px;
 }
 
 .each>img{
-    width: 450px;
+    width: 100%;
+    object-fit: contain;
     height: 300px;
-   
+    aspect-ratio: 3/2;
 }
 
 .each:hover{
@@ -174,5 +190,9 @@ hr{
 }
 
 .space{
-    height: 11vh;
+    height: 105px;
+}
+
+.m-auto {
+    margin: auto;
 }

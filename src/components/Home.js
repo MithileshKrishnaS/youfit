@@ -1,8 +1,9 @@
 import React,{useState} from 'react';
 import { Link } from 'react-router-dom';
-import Work from '../images/workout.svg'
+import Work from '../images/workout.svg';
+import front from '../images/front.jpg';
 
-var url="https://node-youfit.herokuapp.com/"
+var url="https://youfit-node.onrender.com/"
 function Home(props){
     const [data,getData]=useState([])
     
@@ -17,8 +18,9 @@ function Home(props){
         <div className="home">
             <div className="space"></div>
             <div className="header">
+                <img src={front} className='img'></img>
                 <div className="text">
-                <p className="h1"> Reach your fitness goals with <span>Youfit</span></p>
+                <p className="h1"> Reach your fitness goals with <span className='grad'>Youfit</span></p>
                 </div>
             </div> 
             <div className="seconds">
@@ -34,10 +36,10 @@ function Home(props){
             <h1 className="work">Workouts</h1>
             <div className="total">
                 {(data.length===10)?(data.map((input,index)=>(
-                    <Link to={{pathname:'/each/'+index, state:{data:input} }} style={{ textDecoration: 'none' }}>
+                    <Link to={{pathname:'/each/'+index, state:{data:input} }} className='m-auto' style={{ textDecoration: 'none' }}>
                         <div className="each" key={index} onClick={()=>{props.data(index)}}>
                             <img src={input.image}></img>
-                            <p>{input.bodyPart}</p>   
+                            <div>{input.bodyPart}</div>   
                         </div>
                     </Link>
                 ))):null}    

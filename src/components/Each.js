@@ -1,6 +1,6 @@
 import React,{ useState} from "react";
 import { Link } from 'react-router-dom';
-var url="https://node-youfit.herokuapp.com/"
+var url="https://youfit-node.onrender.com/"
 var details=[];
 var list=[];
 

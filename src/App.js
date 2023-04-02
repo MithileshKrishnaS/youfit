@@ -19,8 +19,10 @@ function App() {
     <div className="App">
       <div className="nav">
         {/* <img src={logo1}></img> */}
-        <i class="fas fa-dumbbell fa-4x"></i>
-        <span>Youfit</span>
+        <div className='nav-left'>
+          <i class="fas fa-dumbbell fa-4x grad"></i>
+          <span className="grad">Youfit</span>
+        </div>
       </div>     
        <BrowserRouter>
           <Routes>
