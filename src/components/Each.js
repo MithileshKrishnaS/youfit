@@ -1,6 +1,6 @@
 import React,{ useState} from "react";
 import { Link } from 'react-router-dom';
-var url="https://youfit-node.onrender.com/"
+var url="url"
 var details=[];
 var list=[];
 
