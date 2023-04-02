@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Work from '../images/workout.svg';
 import front from '../images/front.jpg';
 
-var url="https://youfit-node.onrender.com/"
+var url="home"
 function Home(props){
     const [data,getData]=useState([])
     
